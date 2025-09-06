@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的 PWA 網頁</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#3367D6">
+  <link rel="icon" href="icon-192.png">
+</head>
+<body>
+  <h1>歡迎來到我的 PWA！</h1>
+  <p>這是一個可以安裝到手機主畫面的網頁。</p>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(reg => console.log('✅ Service Worker 註冊成功', reg))
+        .catch(err => console.error('❌ Service Worker 註冊失敗', err));
+    }
+  </script>
+</body>
+</html>
