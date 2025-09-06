@@ -2,7 +2,7 @@
   "name": "待辦事項清單",
   "short_name": "待辦清單",
   "description": "一個簡單易用的待辦事項管理APP，支援100則記事、顏色分類和日期管理",
-  "start_url": "./index-pwa.html",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#4CAF50",
@@ -65,7 +65,7 @@
       "name": "新增待辦事項",
       "short_name": "新增",
       "description": "快速新增新的待辦事項",
-      "url": "./index-pwa.html?action=add",
+      "url": "./index.html?action=add",
       "icons": [
         {
           "src": "icons/icon-96x96.png",
@@ -77,7 +77,7 @@
       "name": "查看今天",
       "short_name": "今天",
       "description": "查看今天的待辦事項",
-      "url": "./index-pwa.html?filter=today",
+      "url": "./index.html?filter=today",
       "icons": [
         {
           "src": "icons/icon-96x96.png",
@@ -87,3 +87,4 @@
     }
   ]
 }
+
